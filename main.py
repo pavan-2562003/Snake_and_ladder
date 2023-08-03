@@ -142,6 +142,29 @@ while running:
                     elif rx==554 and diceroll==1 and diceroll!=6 and ry==447:
                         rx=rx+(49*1)-(49*(diceroll-2))
                         ry=ry-49
+                    elif rx ==554 and diceroll==6 and ry==447:
+                        rx=rx+(49*1)-(49*(diceroll-2))
+                        ry=ry-49
+                        turn='red'
+                    elif rx>=603 and diceroll!=6 and ry ==447:
+                        rx=rx-(49*(diceroll-1))
+                        ry=ry-49
+                    elif rx ==603 and diceroll==6 and ry ==447:
+                        rx=rx-(49*(diceroll-1))
+                        ry = ry-49
+                        turn='red'
+
+
+
+            #row 2
+                    elif rx>358 and rx<=603 and ry==398 and diceroll!=6:
+                        rx=rx-(49*diceroll)
+                    elif rx>407 and rx<=603 and diceroll!=6 and ry==398:
+                        rx=rx-(49*diceroll)
+
+
+
+
 
                     
 
