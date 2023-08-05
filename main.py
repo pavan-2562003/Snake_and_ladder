@@ -99,28 +99,29 @@ while running:
                         rx = 203
                         ry = 455
                         turn = 'red'
-                    elif rx in range(162,358) and diceroll!=6 and ry==447:
+                    elif rx in range(203,399) and diceroll!=6 and ry==455:
                         rx=rx+(49*diceroll)
-                    elif rx in range(162,358) and diceroll==6 and ry ==447:
+                    elif rx in range(203,399) and diceroll==6 and ry ==455:
                         rx=rx+(49*diceroll)
                         turn='red'
-                    elif rx==358 and diceroll!=6 and ry==447:
+                    elif rx==399 and diceroll!=6 and ry==455:
                         rx = rx + (49 * diceroll)
-                    elif rx==358 and diceroll==6 and ry==447:
+                    elif rx==399 and diceroll==6 and ry==455:
                         rx = rx + (49 * 5)
                         ry=ry-49
                         turn='red'
-                    elif rx==407 and diceroll<=4 and ry==447:  #7
+                    elif rx==448 and diceroll<=4 and ry==455:  #7
                         rx=rx+(49*diceroll)
-                    elif rx ==4077 and diceroll>4 and diceroll!=6 and ry==447:
+                    elif rx ==448 and diceroll>4 and diceroll!=6 and ry==455:
                         rx=rx+(49*4)
                         ry=ry-49
-                    elif rx==407 and diceroll==6 and ry==447:
+                    elif rx==448 and diceroll==6 and ry==455:
                         rx=rx+(49*4)-(49*(diceroll-5))
                         ry=ry-49
                         turn='red'
-                    elif rx==456 and diceroll<=3 and ry==447:  #8
+                    elif rx==497 and diceroll<=3 and ry==455:  #8
                         rx=rx+(49*diceroll)
+                        #change the values from here 
                     elif rx==456 and diceroll>3 and diceroll!=6 and ry ==447:
                         rx = rx + (49 * 3) - (49 * (diceroll - 4))
                         ry = ry - 49
@@ -161,6 +162,17 @@ while running:
                         rx=rx-(49*diceroll)
                     elif rx>407 and rx<=603 and diceroll!=6 and ry==398:
                         rx=rx-(49*diceroll)
+                    elif rx>407 and rx<=603 and diceroll==6 and ry==398:
+                        rx=rx-(49*diceroll)
+                        turn='red'
+                    elif rx==407 and ry==398 and diceroll!=6:
+                        rx=rx-(49*diceroll)
+                    elif rx==407 and ry==398 and diceroll==6:
+                        rx=rx-(49*5)
+                        ry=ry-49
+                        turn='red'
+
+
 
 
 
