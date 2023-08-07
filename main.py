@@ -99,58 +99,58 @@ while running:
                         rx = 203
                         ry = 455
                         turn = 'red'
-                    elif rx in range(203,399) and diceroll!=6 and ry==455:
+                    elif rx in range(203,399) and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*diceroll)
-                    elif rx in range(203,399) and diceroll==6 and ry ==455:
+                    elif rx in range(203,399) and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*diceroll)
                         turn='red'
-                    elif rx==399 and diceroll!=6 and ry==455:
+                    elif rx==399 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx = rx + (49 * diceroll)
-                    elif rx==399 and diceroll==6 and ry==455:
+                    elif rx==399 and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx = rx + (49 * 5)
                         ry=ry-49
                         turn='red'
-                    elif rx==448 and diceroll<=4 and ry==455:  #7
+                    elif rx==448 and diceroll<=4 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):  #7
                         rx=rx+(49*diceroll)
-                    elif rx ==448 and diceroll>4 and diceroll!=6 and ry==455:
+                    elif rx ==448 and diceroll>4 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*4)
                         ry=ry-49
-                    elif rx==448 and diceroll==6 and ry==455:
+                    elif rx==448 and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*4)-(49*(diceroll-5))
                         ry=ry-49
                         turn='red'
-                    elif rx==497 and diceroll<=3 and ry==455:  #8
+                    elif rx==497 and diceroll<=3 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):  #8
                         rx=rx+(49*diceroll)
                         #change the values from here 
-                    elif rx==456 and diceroll>3 and diceroll!=6 and ry ==447:
+                    elif rx==456 and diceroll>3 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx = rx + (49 * 3) - (49 * (diceroll - 4))
                         ry = ry - 49
-                    elif rx==456  and diceroll==6 and ry ==447:
+                    elif rx==456  and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx = rx + (49 * 3) - (49 * (diceroll - 4))
                         ry = ry - 49
                         turn='red'
-                    elif rx==505 and diceroll<=2 and ry==447:#9
+                    elif rx==505 and diceroll<=2 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):#9
                         rx=rx+(49*diceroll)
-                    elif rx==505 and diceroll>2 and diceroll!=6 and ry==447 :
+                    elif rx==505 and diceroll>2 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx =rx+(49*2)-(49*(diceroll-3))
                         ry =ry-49
-                    elif rx ==505 and diceroll==6 and ry==447:
+                    elif rx ==505 and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*2)-(49*(diceroll-3))
                         ry=ry-49
                         turn='red'
-                    elif rx==554 and diceroll==1 and ry==447: #10
+                    elif rx==554 and diceroll==1 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55): #10
                         rx=rx+(49*diceroll)
-                    elif rx==554 and diceroll==1 and diceroll!=6 and ry==447:
+                    elif rx==554 and diceroll==1 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*1)-(49*(diceroll-2))
                         ry=ry-49
-                    elif rx ==554 and diceroll==6 and ry==447:
+                    elif rx ==554 and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx+(49*1)-(49*(diceroll-2))
                         ry=ry-49
                         turn='red'
-                    elif rx>=603 and diceroll!=6 and ry ==447:
+                    elif rx>=603 and diceroll!=6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx-(49*(diceroll-1))
                         ry=ry-49
-                    elif rx ==603 and diceroll==6 and ry ==447:
+                    elif rx ==603 and diceroll==6 and (ry==455 or ry==349 or ry==251 or ry==153 or ry==55):
                         rx=rx-(49*(diceroll-1))
                         ry = ry-49
                         turn='red'
@@ -158,59 +158,228 @@ while running:
 
 
             #row 2
-                    elif rx>358 and rx<=603 and ry==398 and diceroll!=6:
+                    elif rx>358 and rx<=603 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll!=6:
                         rx=rx-(49*diceroll)
-                    elif rx>407 and rx<=603 and diceroll!=6 and ry==398:
+                    elif rx>358 and rx<=603 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 )  and diceroll==6:
+                        rx=rx-(49*5)
+                        ry=ry-49
+
+                    elif rx>407 and rx<=603 and diceroll!=6 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ):
                         rx=rx-(49*diceroll)
-                    elif rx>407 and rx<=603 and diceroll==6 and ry==398:
+                    elif rx>407 and rx<=603 and diceroll==6 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ):
                         rx=rx-(49*diceroll)
                         turn='red'
-                    elif rx==407 and ry==398 and diceroll!=6:
+                    elif rx==407 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll!=6:
                         rx=rx-(49*diceroll)
-                    elif rx==407 and ry==398 and diceroll==6:
+                    elif rx==407 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==6:
                         rx=rx-(49*5)
                         ry=ry-49
                         turn='red'
-
-
-
-
-
-
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    elif rx==358 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll<5:
+                        rx=rx-(49*diceroll)
+                    elif rx==358 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==5:
+                        rx=rx-(49*4)+(49*(diceroll-5))
+                        ry=ry-49
+                    elif rx==358 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==6:
+                        rx=rx-(49*4)+(49*(diceroll-5))
+                        ry=ry-49
+                        turn='red'
+                    elif rx==309 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll<4:
+                        rx=rx-(49*diceroll)
+                    elif rx==309 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll>=4 and diceroll!=6:
+                        rx=rx-(49*3)+(49*(diceroll-4))
+                        ry=ry-49
+                    elif rx==309 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==6:
+                        rx=rx-(49*3)+(49*(diceroll-4))
+                        ry=ry-49
+                        turn='red'
+                    elif rx==260 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll<3:
+                        rx=rx-(49*diceroll)
+                    elif rx==260 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll>=3 and diceroll!=6:
+                        rx=rx-(49*2)+(49*(diceroll-3))
+                        ry=ry-49
+                    elif rx==260 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==6:
+                        rx=rx-(49*2)+(49*(diceroll-3))
+                        ry=ry-49
+                        turn='red'
+                    elif rx==211 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll<2:
+                        rx=rx-(49*diceroll)
+                    elif rx ==211 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll!=6 and diceroll>=2:
+                        rx=rx-49+(49*(diceroll-2))
+                        ry=ry-49
+                    elif rx==211 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll==6:
+                        rx = rx - 49 + (49 * (diceroll - 2))
+                        ry = ry - 49
+                        turn='red'
+                    elif rx==162 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll!=6:
+                        rx=rx+(49*(diceroll-1))
+                        ry=ry-49
+                    elif rx == 162 and (ry==398 or ry==300 or ry==202 or ry==104 or ry==6 ) and diceroll == 6:
+                        rx = rx + (49 * (diceroll - 1))
+                        ry = ry - 49
+                        turn='red'
 
 
 
                 # Player 2 chance
                 elif pickNumber() and turn == 'blue':
+                    turn='red'
                     if diceroll == 6 and b1x == 100 and b1y == 362:
                         b1x = 203
                         b1y = 455
-                    turn = 'red'
+                        turn = 'blue'
+
+                    elif b1x in range(203, 399) and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * diceroll)
+                    elif b1x in range(203, 399) and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * diceroll)
+                        turn = 'blue'
+                    elif b1x == 399 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * diceroll)
+                    elif b1x == 399 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 5)
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 448 and diceroll <= 4 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):  # 7
+                        b1x = b1x + (49 * diceroll)
+                    elif b1x == 448 and diceroll > 4 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 4)
+                        b1y = b1y - 49
+                    elif b1x == 448 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 4) - (49 * (diceroll - 5))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 497 and diceroll <= 3 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):  # 8
+                        b1x = b1x + (49 * diceroll)
+                        # change the values from here
+                    elif b1x == 456 and diceroll > 3 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 3) - (49 * (diceroll - 4))
+                        b1y = b1y - 49
+                    elif b1x == 456 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 3) - (49 * (diceroll - 4))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 505 and diceroll <= 2 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):  # 9
+                        b1x = b1x + (49 * diceroll)
+                    elif b1x == 505 and diceroll > 2 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 2) - (49 * (diceroll - 3))
+                        b1y = b1y - 49
+                    elif b1x == 505 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 2) - (49 * (diceroll - 3))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 554 and diceroll == 1 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):  # 10
+                        b1x = b1x + (49 * diceroll)
+                    elif b1x == 554 and diceroll == 1 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 1) - (49 * (diceroll - 2))
+                        b1y = b1y - 49
+                    elif b1x == 554 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x + (49 * 1) - (49 * (diceroll - 2))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x >= 603 and diceroll != 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x - (49 * (diceroll - 1))
+                        b1y = b1y - 49
+                    elif b1x == 603 and diceroll == 6 and (
+                        b1y == 455 or b1y == 349 or b1y == 251 or b1y == 153 or b1y == 55):
+                        b1x = b1x - (49 * (diceroll - 1))
+                        b1y = b1y - 49
+                        turn = 'blue'
+
+                    # row 2
+                    elif b1x > 358 and b1x <= 603 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll != 6:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x > 358 and b1x <= 603 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - (49 * 5)
+                        b1y = b1y - 49
+
+                    elif b1x > 407 and b1x <= 603 and diceroll != 6 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6):
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x > 407 and b1x <= 603 and diceroll == 6 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6):
+                        b1x = b1x - (49 * diceroll)
+                        turn = 'blue'
+                    elif b1x == 407 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll != 6:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x == 407 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - (49 * 5)
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 358 and (b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll < 5:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x == 358 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 5:
+                        b1x = b1x - (49 * 4) + (49 * (diceroll - 5))
+                        b1y = b1y - 49
+                    elif b1x == 358 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - (49 * 4) + (49 * (diceroll - 5))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 309 and (b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll < 4:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x == 309 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll >= 4 and diceroll != 6:
+                        b1x = b1x - (49 * 3) + (49 * (diceroll - 4))
+                        b1y = b1y - 49
+                    elif b1x == 309 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - (49 * 3) + (49 * (diceroll - 4))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 260 and (b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll < 3:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x == 260 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll >= 3 and diceroll != 6:
+                        b1x = b1x - (49 * 2) + (49 * (diceroll - 3))
+                        b1y = b1y - 49
+                    elif b1x == 260 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - (49 * 2) + (49 * (diceroll - 3))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 211 and (b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll < 2:
+                        b1x = b1x - (49 * diceroll)
+                    elif b1x == 211 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll != 6 and diceroll >= 2:
+                        b1x = b1x - 49 + (49 * (diceroll - 2))
+                        b1y = b1y - 49
+                    elif b1x == 211 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x - 49 + (49 * (diceroll - 2))
+                        b1y = b1y - 49
+                        turn = 'blue'
+                    elif b1x == 162 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll != 6:
+                        b1x = b1x + (49 * (diceroll - 1))
+                        b1y = b1y - 49
+                    elif b1x == 162 and (
+                        b1y == 398 or b1y == 300 or b1y == 202 or b1y == 104 or b1y == 6) and diceroll == 6:
+                        b1x = b1x + (49 * (diceroll - 1))
+                        b1y = b1y - 49
+                        turn = 'blue'
 
     rplayer(rx, ry)
     bplayer(b1x, b1y)
